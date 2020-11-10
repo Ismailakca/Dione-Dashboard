@@ -1,0 +1,94 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif; }
+
+.container {
+  width: 114rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.btn {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer; }
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #f7faff;
+  border-bottom: 1px solid #e4eaf4; }
+  .header__logo {
+    background-color: #21324f;
+    font-size: 2rem;
+    padding: 2rem 5rem;
+    color: #fff; }
+  .header__content {
+    display: flex;
+    align-items: center;
+    flex-basis: 66%; }
+    .header__content--nav {
+      margin-left: 1rem;
+      width: 2rem;
+      height: .3rem;
+      background-color: #e4eaf4; }
+      .header__content--nav::before, .header__content--nav::after {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: .3rem;
+        background-color: #e4eaf4; }
+      .header__content--nav::before {
+        transform: translateY(-0.5rem); }
+      .header__content--nav::after {
+        transform: translateY(0.2rem); }
+    .header__content--parag {
+      margin-left: 2rem;
+      margin-right: auto;
+      color: #7b96c4;
+      font-size: 2.4rem; }
+    .header__content--create {
+      background-color: #3dcb35;
+      color: #fff;
+      padding: 1.5rem 3rem;
+      border-radius: 10px; }
+    .header__content--noti {
+      margin-left: 4rem;
+      position: relative; }
+      .header__content--noti .red {
+        position: absolute;
+        height: .5rem;
+        width: .5rem;
+        background-color: red;
+        border-radius: 10px; }
+    .header__content--message {
+      margin-right: 3rem;
+      margin-left: 3rem; }
+    .header__content .far {
+      color: #99add0;
+      cursor: pointer;
+      width: 1.7rem;
+      height: 1.7rem; }
+  .header__right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-left: 1px solid #e4eaf4; }
+    .header__right--image {
+      margin-left: 1rem;
+      margin-right: 1rem; }
+    .header__right--parag {
+      font-size: 1.4rem;
+      color: #7b96c4;
+      text-transform: uppercase; }
